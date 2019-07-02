@@ -4,7 +4,7 @@ checks email, message and phone number
 returns a boolean true or false 
 
 after validating form fields, pass the data to spam check
-##Example :
+## Example
 ```php
 
 
