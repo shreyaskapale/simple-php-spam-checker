@@ -46,7 +46,7 @@ function spam_message_check($spm_check_query,$word_list){
 
 
 
-
+#checks if the domain email exists
 function spam_email_check($email, $domainCheck = false)
 {
 	$e_check_temp = explode('@',$email);
@@ -64,9 +64,9 @@ function spam_phone_check($spm_check_query){
 }
 
 
-
+# checks against word list and returns true if match is found
 function word_list_check($spm_check_query){
-
+	#write your custom word list below
 	$words_list = array('spam','lorem','ipsum', 'dolore', 'magna','aliqua','123456791','1111111111','0000000000','123','blabla','fuck','suck','asshole','<','>','{','}','$','9999999999','2222222222','8888888888','7777777777','6666666666','5555555555','4444444444','3333333333','hacker','hack','html','script','alert()','inject',);
 
 	foreach ($words_list as &$word) $word = preg_quote($word, '/');
